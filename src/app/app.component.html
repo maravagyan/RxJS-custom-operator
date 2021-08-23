@@ -1,0 +1,10 @@
+<div class="form-group">
+    <input #what class="form-control" type="text" name="what" id="what" placeholder="what">
+</div>
+<div class="form-group col-3">
+    <input #by class="form-control" type="text" name="by" id="by" placeholder="by">
+</div>
+<div>
+    <span>{{multiplyValue}}</span>
+</div>
+<button class="btn btn-secondary mt-5" (click)="getValue(what.value, by.value)">Multiply</button>
